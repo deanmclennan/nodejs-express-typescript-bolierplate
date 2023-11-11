@@ -1,0 +1,30 @@
+// Build a nodejs express tsconfig file
+
+{
+  "compilerOptions": {
+    "pretty": true,
+    "target": "es2015",
+    "module": "esnext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noEmit": true, // added to fix the problem
+    "allowImportingTsExtensions": true, // added to fix the problem
+
+
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "typeRoots": [
+    ".src/@types"
+  ],
+}
